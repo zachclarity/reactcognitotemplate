@@ -1,0 +1,6 @@
+{
+  "short_name": "AWSCognitoApp",
+  "name": "AWS Cognito",
+  "start_url": ".",
+  "display": "standalone"
+}
