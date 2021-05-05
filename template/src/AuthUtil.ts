@@ -42,7 +42,8 @@ export function awsSetup() {
 
         Amplify.configure(amplifyConfig);
     } catch (error) {
-        console.log(error)
+        //console.log(error)
+        return undefined
     }
 }
 export async function currentUser()
@@ -55,7 +56,7 @@ export async function currentUser()
         return authUser.signInUserSession.idToken.payload.email;
 
     } catch (error) {
-        console.log(error)
+        //console.log(error)
         return undefined
     }
 }
