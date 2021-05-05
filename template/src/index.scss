@@ -1,0 +1,92 @@
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #700F0F;
+  border-radius: 3px;
+  border-color: #F0F000;
+  border-style: solid;
+  border-width: 1px;
+  width: 310px;
+  padding: 35px;
+  margin: 15px;
+
+  .card-content {
+    padding-top: 15px;
+    text-align: center;
+    width: 240px;
+  }
+}
+
+.circle-single-digit {
+  width: 40px;
+  height: 40px;
+  color: #FF00FF;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00FFFF;
+}
+
+.container-step-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-button {
+  display:flex; flex-direction:row;
+  position: relative;
+  height: 224px;
+  width: 240px;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.card-button-image-box{
+  position: absolute;
+  left: -17.08%;
+  right: 52.08%;
+  top: 15.62%;
+  bottom: 7.14%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.card-button-content{
+  flex-direction: column;
+  align-items: center;
+  width: 222px;
+  height: 132px;
+  padding: 24px 0 0 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  color: #FFF00F;
+  line-height: 32px;
+  .card-button-title {
+    font-weight: bold;
+    font-size: 26px;
+  }
+  .card-button-description {
+    font-weight:400;
+    font-size: 18px;
+  }
+}
+.card-button-select-container {
+  position: absolute;
+  right:16px;
+  bottom: 24px;
+}
+.card-button-select {
+  min-width: 101px;
+  height: 37px;
+  background: #423FFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+}
