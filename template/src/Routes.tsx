@@ -16,6 +16,9 @@ export default function Routes() {
             <Route path="/loggedIn">
                 <LoggedIn/>
             </Route>
+            <Route>
+                <div>NOT FOUND</div>
+            </Route>
         </Switch>
     );
 }
