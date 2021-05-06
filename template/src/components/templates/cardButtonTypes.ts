@@ -22,6 +22,7 @@ export interface cardButtonProps {
     loading: boolean;
     onClick: any;
     name: string;
+    foo?: string;
 }
 
 const getCardButtonPropsByType = (type: string) : cardButtonType => {
