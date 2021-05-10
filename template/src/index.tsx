@@ -5,17 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {awsSetup} from "./AuthUtil";
 import {BrowserRouter as Router} from 'react-router-dom';
+import WithSplashScreen from "./components/pages/withSplashScreen";
 
 awsSetup()
 
 ReactDOM.render(
         <Router>
-            <App/>
+            <WithSplashScreen SplashScreen={<>works</>} ForComponent={<App/>}/>
         </Router>,
     document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(console.log);

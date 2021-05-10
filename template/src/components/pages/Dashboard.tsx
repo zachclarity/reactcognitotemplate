@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {awsSetup, currentUser} from "../../AuthUtil";
 
-export default function  LoggedIn() {
+export default function  Dashboard() {
 
     const [me, setMe] = useState({error: "Not Logged In"})
 

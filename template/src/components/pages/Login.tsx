@@ -39,11 +39,12 @@ export default function Login() {
             console.log("DEBUG: Current User: " + currentEmail);
             const profile = await AWSApiRequest("profile", currentEmail);
             console.log(JSON.stringify(profile))
-            history.push("/loggedIn")
+            history.push("/dashboard")
 
         } catch (error) {
             console.log("Error while logging in.", error);
             setError(JSON.stringify(error))
+            history.push("/dashboard")
         }
 
     }
